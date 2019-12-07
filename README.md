@@ -12,6 +12,9 @@ App can be run on both android and IOS
 
 Executable file in main.dart
 
+## Structure
+Developed as a portfolio app. Non-Interactive app using Stateless Widget concept for Hot reload and executable using apk for Android, IOS and also on a Virtual Emulator .
+
 ## References
 
 [Flutter](https://flutter.dev/)
