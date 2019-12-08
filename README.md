@@ -1,7 +1,7 @@
 
 # Flutter Minimalist App
 
-<img align=right src="https://github.com/jayanthj737/Flutter-Portfolio-App/blob/master/Screenshot_1575714692.png" height=600.0>
+![Flutter Portfolio App](record.gif)
 
 ## Why Flutter?
 
@@ -11,10 +11,10 @@ App can be run on both android and IOS
 ## Execute
 
 Executable file in main.dart.
-Checkout the [APK](https://github.com/jayanthj737/Flutter-Portfolio-App/raw/master/app-release.apk)
+Checkout the [APK](https://github.com/jayanthj737/Flutter-Portfolio-App/blob/master/app-release.apk)
 
 ## Structure
-Developed as a portfolio app. Non-Interactive app using Stateless Widget concept for Hot reload and executable using apk for Android, IOS and also on a Virtual Emulator .
+Developed as a portfolio app. Interactive app using Stateless Widget concept for Hot reload and executable using apk for Android, IOS and also on a Virtual Emulator .
 
 ## References
 
