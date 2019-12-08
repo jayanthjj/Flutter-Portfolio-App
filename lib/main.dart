@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
                 radius: 100.0,
                 backgroundImage: AssetImage('images/JJ.jpg'),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 7.0),
               Text(
                 "Jayanth Jayadevan",
                 style: TextStyle(
@@ -28,20 +29,20 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 3.0),
               Text(
                 "National Institute of Technology",
                 style: TextStyle(
                   fontFamily: 'Merriweather',
                   color: Colors.white,
-                  fontSize: 23.0,
+                  fontSize: 22.0,
                 ),
               ),
               Text(
                 "Calicut",
                 style: TextStyle(
                   fontFamily: 'Merriweather',
-                  fontSize: 23.0,
+                  fontSize: 22.0,
                   color: Colors.white,
                 ),
               ),
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
                 "Python | C++ | Flutter | SQL | ML",
                 style: TextStyle(
                   fontFamily: 'Merriweather',
-                  fontSize: 23.0,
+                  fontSize: 20.0,
                   color: Colors.white,
                 ),
               ),
@@ -58,7 +59,7 @@ class MyApp extends StatelessWidget {
                 "Developer",
                 style: TextStyle(
                   fontFamily: 'Merriweather',
-                  fontSize: 23.0,
+                  fontSize: 21.0,
                   color: Colors.white,
                 ),
               ),
@@ -68,145 +69,205 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.fromLTRB(50, 0, 20, 0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.call,
-                      size: 30.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      "+91-9961133071",
-                      style: TextStyle(
-                        fontSize: 23.0,
+              InkWell(
+                onTap: () {
+                  launch("tel://9961133071");
+                },
+                child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white)),
+                  padding: EdgeInsets.all(10.0),
+                  margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.call,
+                        size: 30.0,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 60.0,
+                      ),
+                      Text(
+                        "+91-9961133071",
+                        style: TextStyle(
+                          fontSize: 23.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      size: 30.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      "jayanthjayadevan98@gmail.com",
-                      style: TextStyle(
-                        fontSize: 20.0,
+              InkWell(
+                onTap: () {
+                  launch(
+                      'https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvpZxKgpnmDxrXzlkZMNtJRlkvvSxhSscNkGMTlpWXhtgWpCJCpTNLWnpLTqprgdtVkRjq');
+                },
+                child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white)),
+                  padding: EdgeInsets.all(10.0),
+                  margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
+                        size: 30.0,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text(
+                        "jayanthjayadevan98@gmail.com",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.fromLTRB(40, 0, 5, 0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.device_hub,
-                      size: 30.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 15.0,
-                    ),
-                    Text(
-                      "github.com/jayanthj737",
-                      style: TextStyle(
-                        fontSize: 20.0,
+              InkWell(
+                onTap: () {
+                  launch('https://github.com/jayanthj737');
+                },
+                child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white)),
+                  padding: EdgeInsets.all(10.0),
+                  margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.device_hub,
+                        size: 30.0,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 55.0,
+                      ),
+                      Text(
+                        "github.com/jayanthj737",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.fromLTRB(1, 0, 1, 0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.domain,
-                      size: 30.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 5.0,
-                    ),
-                    Text(
-                      "linkedin.com/in/jayanthjayadevan",
-                      style: TextStyle(
-                        fontSize: 20.0,
+              InkWell(
+                onTap: () {
+                  launch('https://www.linkedin.com/in/jayanthjayadevan/');
+                },
+                child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white)),
+                  padding: EdgeInsets.all(10.0),
+                  margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.domain,
+                        size: 30.0,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 50.0,
+                      ),
+                      Text(
+                        "linkedin.com/in/jayanthjj",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.check_circle,
-                      size: 30.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 17.0,
-                    ),
-                    Text(
-                      "https://twitter.com/jayanth_j737",
-                      style: TextStyle(
-                        fontSize: 20.0,
+              InkWell(
+                onTap: () {
+                  launch('https://twitter.com/jayanth_j737');
+                },
+                child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white)),
+                  padding: EdgeInsets.all(10.0),
+                  margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.check_circle,
+                        size: 30.0,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text(
+                        "https://twitter.com/jayanth_j737",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
+              InkWell(
+                onTap: () {
+                  launch(
+                      'https://instagram.com/jayanth._.j7?igshid=cfnbycdt4ewo');
+                },
+                child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white)),
+                  padding: EdgeInsets.all(10.0),
+                  margin: EdgeInsets.fromLTRB(5, 0, 5, 0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.image,
+                        size: 30.0,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 40.0,
+                      ),
+                      Text(
+                        "instagram.com/jayanth._.j7",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              
               Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.fromLTRB(25, 0, 5, 0),
                 child: Row(
                   children: <Widget>[
-                    Icon(
-                      Icons.image,
-                      size: 30.0,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 17.0,
-                    ),
+                    SizedBox(width: 280),
                     Text(
-                      "instagram.com/jayanth._.j7",
+                      " © Jayanth Jayadevan",
                       style: TextStyle(
-                        fontSize: 20.0,
+                        fontFamily: 'Merriweather',
+                        fontSize: 10.0,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],

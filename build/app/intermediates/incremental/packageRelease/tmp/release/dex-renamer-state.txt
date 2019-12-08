@@ -1,0 +1,4 @@
+#Sun Dec 08 14:13:42 IST 2019
+base.0=/Project/Projects Done/Flutter-Portfolio-App/build/app/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

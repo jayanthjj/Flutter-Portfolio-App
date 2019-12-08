@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Project/Projects Done/Flutter-Portfolio/JJ/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Project/Projects Done/Flutter-Portfolio-App/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Project/Projects Done/Flutter-Portfolio/JJ/android/app/src/main/res/values/styles.xml",
+                    "source": "/Project/Projects Done/Flutter-Portfolio-App/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
