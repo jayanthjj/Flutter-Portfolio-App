@@ -1,28 +1,24 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
-# Mi Card
+# Flutter Minimalist App
 
-## Our Goal
+<img align=right src="https://github.com/jayanthj737/Flutter-Portfolio-App/blob/master/Screenshot_1575714692.png" height=600.0>
 
-Now that you've seen how to create a Flutter app entirely from scratch, we're going to go further and learn more about how to design user interfaces for Flutter apps.
+## Why Flutter?
 
-## What you will create
+Flutter is Google's UI toolkit for crafting beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
+App can be run on both android and IOS
 
-Mi Card is a personal business card. Imagine every time you wanted to give someone your contact details or your business card but you didn't have it on you. Well, now you can get them to download your business card as an app.
+## Execute
 
-## What you will learn
+Executable file in main.dart.
+Checkout the [APK](https://github.com/jayanthj737/Flutter-Portfolio-App/raw/master/app-release.apk)
 
-* How to create Stateless Widgets
-* What is the difference between hot reload and hot refresh and running an app from cold
-* How to use Containers to lay out your UI
-* How to use Columns and Rows to position your UI elements
-* How to add custom fonts
-* How to add Material icons
-* How to style Text widgets
-* How to read and use Flutter Documentation
+## Structure
+Developed as a portfolio app. Non-Interactive app using Stateless Widget concept for Hot reload and executable using apk for Android, IOS and also on a Virtual Emulator .
 
+## References
 
+[Flutter](https://flutter.dev/)
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+## Author
+[Jayanth Jayadevan](https://github.com/jayanthj737) (jayanth.j737@gmail.com)
