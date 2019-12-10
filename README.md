@@ -1,5 +1,5 @@
 
-# Flutter Minimalist App
+# Flutter Portfolio App
 
 <img align=right src='https://github.com/jayanthj737/Flutter-Portfolio-App/blob/master/Record.gif' height=400>
 
